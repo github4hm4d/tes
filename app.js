@@ -3,7 +3,7 @@ const port = process.env.PORT || 1953;
 const s = new server({ port: port});
 let counter = 0;
 let counteronline = 1;
-// console.log("start");
+console.log("start");
 s.on('connection', function(ws){
     counter++;
     ws.on('message', function(message){
@@ -113,7 +113,7 @@ s.on('connection', function(ws){
     });
 
 
-    // console.log("1 koneksi baru: " + counter );
+    console.log("1 koneksi baru: " + counter );
 
 
     // setInterval(function () {
